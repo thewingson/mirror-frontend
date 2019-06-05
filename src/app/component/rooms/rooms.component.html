@@ -1,17 +1,20 @@
-<!--<div class="row">-->
-<!--  <app-room class="col-md-6" *ngFor="let room of rooms"-->
-<!--            [room]="room">-->
-<!--&lt;!&ndash;            (postUpdated)="updatePost($event)"&ndash;&gt;-->
-<!--&lt;!&ndash;            (postDeleted)="deletePost($event)"&ndash;&gt;-->
-<!--  </app-room>-->
-<!--</div>-->
+
 
 <section class="no-padding-top no-padding-bottom">
     <div class="container-fluid">
-      <div class="row">
-        <app-room *ngFor="let room of rooms" [room]="room"></app-room>
+      <div class="row" >
+<!--        <app-room *ngFor="let room of rooms" [room]="room"></app-room>-->
+          <div class="col-md-3 col-sm-6" *ngFor="let room of roomsShow">
+              <div class="statistic-block block">
+                  <div class="progress-details d-flex align-items-end justify-content-between">
+                      <div class="title">
+                          <div class="icon"></div><strong style="color: white">{{ room.name }}</strong>
+                      </div>
+                      <div class="number dashtext-1" style="color: white">{{ room.light }}</div>
+                  </div>
+              </div>
+          </div>
       </div>
-      <app-weather></app-weather>
 
 
   </div>
@@ -19,7 +22,34 @@
 
 <section class="no-padding-bottom">
   <div class="container-fluid">
-                    <app-calendar></app-calendar>
+      <div class="row">
+
+
+          <div class="col-lg-6">
+          </div>
+          <div class="col-lg-6">
+                <div *ngFor="let room of roomsShow">
+                    <div class="stats-2-block block d-flex" style="width: 100%; margin: 0 auto;">
+                        <h3 style="color: white; margin: 0 auto;">{{room.name}}</h3>
+                    </div>
+                    <div class="stats-2-block block d-flex" >
+
+                        <div class="stats-2 d-flex">
+                            <div class="stats-2-content"><strong class="d-block" style="color: white">{{room.temperature}}C</strong><span class="d-block">Temperature</span>
+
+                            </div>
+                        </div>
+                        <div class="stats-2 d-flex">
+                            <div class="stats-2-content"><strong class="d-block" style="color: white">{{room.humidity}}%</strong><span class="d-block">Humidity</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          </div>
+
+      </div>
   </div>
 </section>
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Room} from '../../model/Room';
 import {HttpClient} from '@angular/common/http';
+import {RoomShow} from '../../model/RoomShow';
 
 @Component({
   selector: 'app-rooms',
@@ -10,6 +11,7 @@ import {HttpClient} from '@angular/common/http';
 export class RoomsComponent implements OnInit {
 
   public rooms: Room[] = [];
+  public roomsShow: RoomShow [] = [];
 
   public constructor(private http: HttpClient) {
   }
@@ -25,6 +27,17 @@ export class RoomsComponent implements OnInit {
     this.http.get<any>(url,).subscribe(
         res => {
           this.rooms = res;
+          this.roomsShow = this.rooms;
+
+          for (let i = 0; i<this.rooms.length; i++){
+            if(this.rooms[i].light == 1){
+              this.roomsShow[i].light = "ON";
+            }
+            else {
+              this.roomsShow[i].light = "OFF";
+
+            }
+          }
         },
         err => {
           alert('Error occurred while downloading the rooms;');
