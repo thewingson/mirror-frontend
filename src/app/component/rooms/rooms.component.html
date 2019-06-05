@@ -1,0 +1,30 @@
+<!--<div class="row">-->
+<!--  <app-room class="col-md-6" *ngFor="let room of rooms"-->
+<!--            [room]="room">-->
+<!--&lt;!&ndash;            (postUpdated)="updatePost($event)"&ndash;&gt;-->
+<!--&lt;!&ndash;            (postDeleted)="deletePost($event)"&ndash;&gt;-->
+<!--  </app-room>-->
+<!--</div>-->
+
+<section class="no-padding-top no-padding-bottom">
+    <div class="container-fluid">
+      <div class="row">
+        <app-room *ngFor="let room of rooms" [room]="room"></app-room>
+      </div>
+      <app-weather></app-weather>
+
+
+  </div>
+</section>
+
+<section class="no-padding-bottom">
+  <div class="container-fluid">
+                    <app-calendar></app-calendar>
+  </div>
+</section>
+
+<section class="no-padding-bottom">
+  <div class="container-fluid">
+                    <app-lastrow></app-lastrow>
+  </div>
+</section>
