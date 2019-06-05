@@ -7,10 +7,10 @@ const app = express();
 
 app.use(compression());
 
-app.use(express.static(path.join(__dirname, 'dist/mirror-front-heroku')));
+app.use(express.static(path.join(__dirname, 'dist/ani')));
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'dist/mirror-front-heroku/index.html'));
+    res.sendFile(path.join(__dirname, 'dist/ani/index.html'));
 });
 
 const port = process.env.PORT || 3000;
