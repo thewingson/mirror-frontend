@@ -22,7 +22,7 @@ export class RoomsComponent implements OnInit {
 
   public getAllRooms() {
 
-    let url = 'http://localhost:8080/api/room/all';
+    let url = 'https://smartmirror-api.herokuapp.com//api/room/all';
 
     this.http.get<any>(url,).subscribe(
         res => {
