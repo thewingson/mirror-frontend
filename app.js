@@ -1,7 +1,7 @@
 const express = require('express');
 const http = require('http');
 const path = require('path');
-const compression = require('compression');
+const compression = r
 
 const app = express();
 
