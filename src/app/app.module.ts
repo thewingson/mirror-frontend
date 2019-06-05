@@ -22,6 +22,7 @@ import { CalendarComponent } from './component/calendar/calendar.component';
 import { LastrowComponent } from './component/lastrow/lastrow.component';
 import {NewsComponent} from './component/lastrow/news/news.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +46,7 @@ import {NewsComponent} from './component/lastrow/news/news.component';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
   ],
   providers: [ApixuService],
   bootstrap: [AppComponent]

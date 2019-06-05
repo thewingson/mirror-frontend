@@ -1,16 +1,98 @@
 
+<!--<div class="row">-->
+<!--    <p *ngIf="weather.length == 0">Searching...</p>-->
+<!--    <div class="col-md-2 col-sm-6" *ngFor="let forecast of weather">-->
+<!--        <div class="statistic-block block">-->
+<!--            <div class="progress-details d-flex align-items-end justify-content-between">-->
+<!--                <div class="title">-->
+<!--                    <div class="icon"><img [src]="forecast.iconLink"/></div><strong>{{ forecast.utcTime | moment }}</strong>-->
+<!--                </div>-->
+<!--                <div class="number dashtext-1">{{ forecast.highTemperature }}C  {{ forecast.highTemperature | fahrenheit }}F</div>-->
+<!--            </div>-->
+<!--            <div class="progress progress-template">-->
+<!--                <div role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template dashbg-1"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+
 <div class="row">
-    <p *ngIf="weather.length == 0">Searching...</p>
-    <div class="col-md-2 col-sm-6" *ngFor="let forecast of weather">
+    <div class="col-md-2 col-sm-6" >
         <div class="statistic-block block">
             <div class="progress-details d-flex align-items-end justify-content-between">
                 <div class="title">
-                    <div class="icon"><img [src]="forecast.iconLink"/></div><strong>{{ forecast.utcTime | moment }}</strong>
+                    <div class="icon"><img src="https://weather.cit.api.here.com/static/weather/icon/10.png"></div><strong style="color: white ">June 06, 2019</strong>
                 </div>
-                <div class="number dashtext-1">{{ forecast.highTemperature }}C  {{ forecast.highTemperature | fahrenheit }}F</div>
+                <div class="number dashtext-1" ><h2 style="color: white ">24.70C 76.46F</h2></div>
             </div>
             <div class="progress progress-template">
-                <div role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" class="progress-bar progress-bar-template dashbg-1"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6" >
+        <div class="statistic-block block">
+            <div class="progress-details d-flex align-items-end justify-content-between">
+                <div class="title">
+                    <div class="icon"><img src="https://weather.cit.api.here.com/static/weather/icon/3.png"></div><strong style="color: white ">June 07, 2019</strong>
+                </div>
+                <div class="number dashtext-1"><h2 style="color: white ">24.90C 76.82F</h2></div>
+            </div>
+            <div class="progress progress-template">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6" >
+        <div class="statistic-block block">
+            <div class="progress-details d-flex align-items-end justify-content-between">
+                <div class="title">
+                    <div class="icon"><img src="https://weather.cit.api.here.com/static/weather/icon/10.png"></div><strong style="color: white ">June 08, 2019</strong>
+                </div>
+                <div class="number dashtext-1"><h2 style="color: white ">24.30C 75.74F</h2></div>
+            </div>
+            <div class="progress progress-template">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6" >
+        <div class="statistic-block block">
+            <div class="progress-details d-flex align-items-end justify-content-between">
+                <div class="title">
+                    <div class="icon"><img src="https://weather.cit.api.here.com/static/weather/icon/26.png"></div><strong style="color: white ">June 09, 2019</strong>
+                </div>
+                <div class="number dashtext-1"><h2 style="color: white ">18.60C 65.48F</h2></div>
+            </div>
+            <div class="progress progress-template">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6" >
+        <div class="statistic-block block">
+            <div class="progress-details d-flex align-items-end justify-content-between">
+                <div class="title">
+                    <div class="icon"><img src="https://weather.cit.api.here.com/static/weather/icon/26.png"></div><strong style="color: white ">June 10, 2019</strong>
+                </div>
+                <div class="number dashtext-1"><h2 style="color: white ">18.40C 65.12F</h2></div>
+            </div>
+            <div class="progress progress-template">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-2 col-sm-6" >
+        <div class="statistic-block block">
+            <div class="progress-details d-flex align-items-end justify-content-between">
+                <div class="title">
+                    <div class="icon"><img src="https://weather.cit.api.here.com/static/weather/icon/3.png"></div><strong style="color: white ">June 11, 2019</strong>
+                </div>
+                <div class="number dashtext-1"><h2 style="color: white ">24.90C 76.82F</h2></div>
+            </div>
+            <div class="progress progress-template">
             </div>
         </div>
     </div>
